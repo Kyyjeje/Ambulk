@@ -217,7 +217,7 @@ function downloadBulk() {
     bulkData.map((item, i) =>
       `[${i+1}] Email   : ${item.email}\n     Inbox   : ${item.access_link}\n     Order ID: ${item.orderId || '-'}\n     Premium : ${item.premiumApplied ? 'Ya' : 'Tidak'}`
     ).join("\n\n") +
-    `\n\n${"=".repeat(40)}\nPowered by DapjiSync — am.dapjisync.my.id`;
+    `\n\n${"=".repeat(40)}\nPowered by Risky Dwi Nugroho — Rizzyeyo.my.id`;
 
   const blob = new Blob([text], { type: "text/plain" });
   const url  = URL.createObjectURL(blob);
